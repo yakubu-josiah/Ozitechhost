@@ -17,8 +17,8 @@
         <!--Preload End-->
     
         <!--Full width header Start-->
-        <section class="full-width-header">
-            <!-- Toolbar Start -->
+        <section class="full-width-header"
+            {{--  Toolbar Start  --}}
             <div class="toolbar-area hidden-sm hidden-xs">
                 <div class="container">
                     <div class="row">
@@ -51,21 +51,21 @@
                     </div>
                 </div>
             </div>
-            <!-- Toolbar End -->
+            {{-- Toolbar End  --}}
     
-            <!--Header Start-->
+            {{-- <!--Header Start--> --}}
             <header id="rs-header" class="rs-header">
-                <!-- Menu Start -->
+                {{-- <!-- Menu Start --> --}}
                 <div class="menu-area menu-sticky">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3 col-md-12">
                                 <div class="logo-area defult-logo">
-                                    <!-- <a href="/"><img src="images/logo-white.png" alt="logo"></a> -->
+                                    {{-- <!-- <a href="/"><img src="images/logo-white.png" alt="logo"></a> --> --}}
                                     <a href="/"><img src="images/logo.fw.png" alt="logo"></a>
                                 </div>
                                 <div class="logo-area sticky-logo">
-                                    <!-- <a href="/"><img src="images/logo-dark.png" alt="logo"></a> -->
+                                    {{-- <!-- <a href="/"><img src="images/logo-dark.png" alt="logo"></a> --> --}}
                                     <a href="/"><img src="images/logo.fw.png" alt="logo"></a>
                                 </div>
                             </div>
@@ -74,25 +74,25 @@
                                     <a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
-                                            <!-- Home -->
+                                            {{-- <!-- Home --> --}}
                                             <li class="current-menu-item current_page_item"> <a href="/" class="home active-icon">Home</a>
                                             </li>
-                                            <!-- End Home -->
+                                            {{-- <!-- End Home --> --}}
     
                                             <!--Hosting Mega Menu Start -->
                                             <li class=" hosting-menu menu-item-has-children"> <a href="#">Hosting</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="web-hosting.php"><i class="flaticon-server"></i> Shared Hosting</a> </li>
                                                     <li><a href="reseller-hosting.php"><i class="flaticon-support"></i> Reseller Hosting</a> </li>
-                                                    <!-- <li><a href="ssd-vps.php"><i class="flaticon-virus"></i> Managed SSD VPS Hosting</a></li> -->
+                                                    {{-- <!-- <li><a href="ssd-vps.php"><i class="flaticon-virus"></i> Managed SSD VPS Hosting</a></li> --> --}}
                                                 </ul>
                                             </li>
-                                            <!--Hosting Mega Menu End -->
+                                            {{-- <!--Hosting Mega Menu End --> --}}
     
-                                            <!--Domains Menu Start-->
+                                            {{-- <!--Domains Menu Start--> --}}
                                             <li class=""> <a href="https://www.ozitechhost.com/cart.php?a=add&domain=register">Domains</a></li>
-                                            <!-- <li class="menu-item-has-children"> <a href="domains.php">Domains</a></li> -->
-                                            <!--Domains Menu End-->
+                                            {{-- <!-- <li class="menu-item-has-children"> <a href="domains.php">Domains</a></li> -->
+                                            <!--Domains Menu End--> --}}
     
                                             <li class=""> <a href="https://www.ozitechhost.com/cart.php?gid=6">SSL Certificates</a></li>
     
@@ -101,19 +101,19 @@
                                             <li class=""> <a href="https://www.creativeweb.com.ng">Web Design</a></li>
     
                                         </ul>
-                                        <!-- //.nav-menu -->
+                                        {{-- <!-- //.nav-menu --> --}}
                                     </nav>
                                 </div>
-                                <!-- //.main-menu -->
+                                {{-- <!-- //.main-menu --> --}}
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Menu End -->
+                {{-- <!-- Menu End --> --}}
             </header>
-            <!--Header End-->
+            {{-- <!--Header End--> --}}
         </section>
-        <!--Full width header End--><style type="text/css">
+        {{-- <!--Full width header End--> --}}<style type="text/css">
         .slider-text {
             background: rgba(0, 0, 0, 0.3);
             padding: 20% 30px 10% !important;
@@ -126,7 +126,7 @@
         }
     </style>
     
-    <!--Slider Section Start-->
+    {{-- <!--Slider Section Start--> --}}
     <section id="rs-hostlab-slider" class="rs-hostlab-slider desktop">
         <div class="overlay-D"></div>
         <div class="slider-carousel owl-carousel">
@@ -139,7 +139,7 @@
                                     <h1 class="sl-title">
                                         Fully Managed Hosting Server
                                     </h1>
-                                    <!-- <h3 class="sl-price">Starting at <span>₦3,500</span> year*</h3> -->
+                                    {{-- <!-- <h3 class="sl-price">Starting at <span>₦3,500</span> year*</h3> --> --}}
                                     <h3 class="sl-subtitle">Our tech experts work hard to give you the best hosting services</h3>
     
                                     <ul class="bulet">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <!-- //.single-slider -->
+            {{-- <!-- //.single-slider --> --}}
             <div class="single-slider slider-two">
                 <div class="content-inner">
                     <div class="container">
@@ -192,11 +192,11 @@
                     </div>
                 </div>
             </div>
-            <!-- //.single-slider -->
+            {{-- <!-- //.single-slider --> --}}
         </div>
-        <!-- //.slider-carousel -->
+        {{-- <!-- //.slider-carousel --> --}}
     </section>
-    <!--Slider Section End-->
+    {{-- <!--Slider Section End--> --}}
     
     <section class="forMobile">
         <div class="text-content">
@@ -209,14 +209,14 @@
     
     </section>
     
-    <!-- Hosting Platforms Start -->
+    {{-- <!-- Hosting Platforms Start --> --}}
     <section id="rs-host-platform" class="rs-host-platform sec-spacer wow fadeIn">
         <div class="container">
             <div class="section-title text-center">
                 <h2>The Fastest Hosting To Help You Succeed!</h2>
                 <p>Ozitechhost, we are known and trusted since 2012 for outstanding, fully managed web hosting services. Expanding each year we now offer Shared, Reseller and VPS hosting to suit any budget – all with proven best uptime on the planet!</p>
             </div>
-            <!-- Nav tabs -->
+            {{-- <!-- Nav tabs --> --}}
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#one">Shared Hosting</a>
@@ -224,7 +224,7 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#two">Reseller Hosting</a>
                 </li>
-                <!-- <li class="nav-item">
+                {{-- <!-- <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#three">Managed SSD VPS Hosting</a>
                     </li> -->
                 <!-- <li class="nav-item">
@@ -232,10 +232,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#five">unix OS</a>
-                    </li> -->
+                    </li> --> --}}
             </ul>
     
-            <!-- Tab panes -->
+            {{-- <!-- Tab panes --> --}}
             <div class="tab-content">
                 <div class="tab-pane active" id="one">
                     <div class="row margin-0">
@@ -542,7 +542,7 @@
                     </div>
                 </div>
     
-                <!-- <div class="tab-pane fade" id="three">
+                {{-- <!-- <div class="tab-pane fade" id="three"> --}}
                         <div class="row">
                             <div class="col-md-3 column-space">
                                 <div class="col-content">
@@ -684,9 +684,9 @@
             </div>
         </div>
     </section>
-    <!-- Hosting Platforms End -->
+    {{-- <!-- Hosting Platforms End --> --}}
     
-    <!--Testimonial Section Start-->
+    {{-- <!--Testimonial Section Start--> --}}
     <section id="rs-hostlab-testimonial" class="rs-hostlab-testimonial sec-spacer section-bg wow fadeIn">
         <div class="container">
             <div class="section-title text-center mb-50">
@@ -695,9 +695,9 @@
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-autoplay-timeout="8000" data-smart-speed="2000" data-dots="true" data-nav="false" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="true" data-ipad-device="1" data-ipad-device-nav="false" data-ipad-device-dots="true" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="true" data-md-device="2" data-md-device-nav="false" data-md-device-dots="true">
                 <div class="testimonial-4">
                     <div class="testimonial-list">
-                        <!-- div class="testimonial-img">
+                        {{-- <!-- div class="testimonial-img">
                                 <img src="images/testimonial/2.jpg" alt="">
-                            </div> -->
+                            </div> --> --}}
                         <div class="testimonial-content">
                             <h3 class="testimonial-title">Ugo Ez.</h3>
                             <!-- <span class="cl-client-designation">Web Developer</span> -->
