@@ -3,7 +3,6 @@
 
 
 @section('content')
-    <h1>Hello!</h1>
         <!--Preload Start-->
         <!-- <div id="loading">
             <div id="loading-center">
@@ -17,7 +16,7 @@
         <!--Preload End-->
     
         <!--Full width header Start-->
-        <section class="full-width-header"
+        <section class="full-width-header">
             {{--  Toolbar Start  --}}
             <div class="toolbar-area hidden-sm hidden-xs">
                 <div class="container">
@@ -27,13 +26,6 @@
                                 <ul class="top-menu">
                                     <li><i class="fa fa-phone"></i><a href="tel:+2349071555545">+23490 715 55545</a></li>
                                     <li><i class="fa fa-envelope-o"></i><a href="https://www.ozitechhost.com/submitticket.php">Support</a></li>
-                                    <!-- <li><a href="#">Eng<i class="fa fa-angle-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">USA</a></li>
-                                            <li><a href="#">Japan</a></li>
-                                            <li><a href="#">India</a></li>
-                                        </ul>
-                                    </li> -->
                                 </ul>
                             </div>
                             <!-- // .toolbar-contact -->
