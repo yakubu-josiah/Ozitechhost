@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('home/index', function () {
+Route::get('/', function () {
     return view('home.index');
 })->name('home.index');
+Route::get('Admin/', function (){
+    return view('Admin.index');
+})->name('Admin.index');
