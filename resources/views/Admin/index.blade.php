@@ -3,7 +3,7 @@
 
 
 @section('content')
-    <div>
+    <div class="container">
         <div>
             <h3>Top Bar Navigation</h3>
         </div>
