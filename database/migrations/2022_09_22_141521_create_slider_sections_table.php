@@ -16,6 +16,14 @@ return new class extends Migration
         Schema::create('slider_sections', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+           $table->text('Sld_Img');
+            $table->string('Sld_H1');
+            $table->string('Sld_H3');
+            $table->string('Sld_Btn');
+            $table->text('Sld_Imgs');
+            $table->string('Sld_H1s');
+            $table->string('Sld_H3s');
+            $table->string('Sld_Btns');
         });
     }
 

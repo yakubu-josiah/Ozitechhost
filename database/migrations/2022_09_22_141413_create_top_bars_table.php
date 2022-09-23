@@ -16,6 +16,10 @@ return new class extends Migration
         Schema::create('top_bars', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('Cnt_Phn');
+            $table->string('Cnt_Spt');
+            $table->string('Cnt_Aff');
+            $table->string('Cnt_Cli');           
         });
     }
 

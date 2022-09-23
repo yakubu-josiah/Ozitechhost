@@ -16,6 +16,12 @@ return new class extends Migration
         Schema::create('brand_partners', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->text('FPS_Img1');
+            $table->text('FPS_Img2');
+            $table->text('FPS_Img3');
+            $table->text('FPS_Img4');
+            $table->text('FPS_Img5');
+            $table->text('FPS_Img6');
         });
     }
 

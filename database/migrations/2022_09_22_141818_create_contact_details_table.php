@@ -16,6 +16,12 @@ return new class extends Migration
         Schema::create('contact_details', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('FCC_em');
+            $table->string('FCC_su');
+            $table->string('FCC_of');
+            $table->string('FCC_ad');
+            $table->string('FCC_ph');
+            $table->string('FCC_nu');
         });
     }
 

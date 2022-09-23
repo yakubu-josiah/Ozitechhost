@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('hosting_platforms', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('Hp_H2');
+            $table->string('Hp_p');
         });
     }
 
