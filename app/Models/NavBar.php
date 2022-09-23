@@ -18,3 +18,4 @@ class NavBar extends Model
     ];
     use HasFactory;
 }
+

@@ -15,3 +15,4 @@ class TopBar extends Model
     ];
     use HasFactory;
 }
+

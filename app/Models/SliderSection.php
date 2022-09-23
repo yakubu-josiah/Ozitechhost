@@ -21,3 +21,4 @@ class SliderSection extends Model
     ];
     use HasFactory;
 }
+

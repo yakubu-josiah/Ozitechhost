@@ -13,3 +13,4 @@ class HostingPlatform extends Model
     ];
     use HasFactory;
 }
+
