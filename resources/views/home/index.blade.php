@@ -54,7 +54,7 @@
                             <div class="col-lg-3 col-md-12">
                                 <div class="logo-area defult-logo">
                                     {{-- <!-- <a href="/"><img src="images/logo-white.png" alt="logo"></a> --> --}}
-                                    <a href="/"><img src="images/logo.fw.png" alt="logo"></a>
+                                    <a href="{{ route('Admin.index') }}"><img src="images/logo.fw.png" alt="logo"></a>
                                 </div>
                                 <div class="logo-area sticky-logo">
                                     {{-- <!-- <a href="/"><img src="images/logo-dark.png" alt="logo"></a> --> --}}
