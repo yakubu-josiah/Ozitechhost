@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('Admin/', function (){
     return view('Admin.index');
 })->name('Admin.index');
+Route::get('Admin/home/Brand/create', function (){
+    return view('Admin.home.Brand.create');
+})->name('Brand.create');
