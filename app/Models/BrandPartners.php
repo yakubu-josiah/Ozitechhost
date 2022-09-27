@@ -16,4 +16,13 @@ class BrandPartners extends Model
         'FPS_Img6',
     ];
     use HasFactory;
+
+
+    // public static function getForAdmin(){
+    //     return self::orderBy('id', 'DESC')->get();
+    // }
+
+    // public static function adminGetAdmin($id){
+    //     return self::where()
+    // }
 }
