@@ -26,7 +26,7 @@ class AdminController extends Controller
 
    public function BrandEdit(Request $request)
     {
-        $Brands = BrandPartners::create();
+        $Brands = BrandPartners::create($request->all());
     }
 
 
