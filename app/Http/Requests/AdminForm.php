@@ -13,7 +13,7 @@ class AdminForm extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,13 @@ class AdminForm extends FormRequest
     public function rules()
     {
         return [
-            //
+            //Brand Partners
+            'FPS_Img1' => 'bail|required',
+            'FPS_Img2' => 'bail|required',
+            'FPS_Img3' => 'bail|required',
+            'FPS_Img4' => 'bail|required',
+            'FPS_Img5' => 'bail|required',
+            'FPS_Img6' => 'bail|required'
         ];
     }
 }
