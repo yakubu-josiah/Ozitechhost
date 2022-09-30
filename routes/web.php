@@ -36,3 +36,9 @@ Route::put('Admin/home/edit-brand/edit/{id}/update/', [AdminController::class, '
     ->name('Brand.update');
 Route::delete('Admin/home/edit-brand/delete/{id}', [AdminController::class, 'BrandDelete'])
     ->name('Brand.delete');
+
+    //  CONTACT DETAILS SECTION
+
+Route::get('Admin/home/edit-contact/create', [AdminController::class, 'ContactCreate'])
+    ->name('Contact.create');
+

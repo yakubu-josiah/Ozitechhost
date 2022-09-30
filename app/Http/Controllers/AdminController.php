@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\AdminForm;
 use App\Models\BrandPartners;
+use App\Models\ContactDetails;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -11,14 +12,16 @@ class AdminController extends Controller
     public function index()
     {
         $Brand = BrandPartners::get();
+        $Contact = ContactDetails::get();
   
         return view('Admin.index',
             [
-                'Brand' => $Brand
+                'Brand' => $Brand,
+                'Contact' => $Contact
             ]
         );
     }
-            // THE BRAND SECTION  THE BRAND SECTION THE BRAND SECTION THE BRAND SECTION
+            // THE BRAND SECTION   THE BRAND SECTION    THE BRAND SECTION   THE BRAND SECTION
 
     public function BrandCreate()
     {
@@ -58,5 +61,13 @@ class AdminController extends Controller
 
         session()->flash('status', 'Deleted successfully!!!');
         return redirect()->route('Admin.index');
+    }
+
+    
+    
+    // THE CONTACT SECTION     THE CONTACT SECTION     THE CONTACT SECTION    THE CONTACT SECTION
+    public function ContactCreate()
+    {
+        return view('Admin.home.Contact.create');
     }
 }

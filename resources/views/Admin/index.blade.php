@@ -4,7 +4,6 @@
 
 @section('content')
     <x-headbar>
-        {{-- @include('Admin.partials.headbar') --}}
         <div class="container pt-4 text-center mt-5 bg-light">
             <div class="form-control">
                 <h3 class="fs-3 fw-light p-3">THE HOMEPAGE EDITING SECTION</h3>
@@ -54,14 +53,32 @@
                                 </x-table-buttons>
                             </td>   
                         </tr>
-                    @endforeach
-                    
-                    
+                    @endforeach                    
                 </table>
-                
+
                 <table class="table table-striped">
-                    <h3>Your Contact Detials On Footer</h3>
+                    <x-table-head>
+                        <h3>Your Contact Detials On Footer</h3>
+                        <a href="{{ route('Contact.create')}} " class="text-decoration-none mt-2 mb-4 text-success mx-5 border-bottom border-top border-danger link-dark">Add Features</a>
+                    </x-table-head>
                     @include('Admin.partials.table')
+                    @foreach ($Contact as $item)
+                        <tr>
+                            <td>{{ $item->id}}</td>
+                            <td class="text-truncate" style="max-width: 150px;">{{ $item->FCC_em}}</td>
+                            <td>{{ $item->created_at}}</td>
+                            <td>
+                                <x-table-buttons>
+                                    <a href="{{ route('Brand.edit', $item->id) }}" class="btn btn-sm btn-outline-info px-3 rounded mx-2 text-black"> Edit Row</a>
+                                    <form action="{{ route('Brand.delete', $item->id) }}" method="POST">
+                                        @csrf 
+                                        @method('DELETE')
+                                        @include('Admin.partials.Form.delete-button')
+                                    </form> 
+                                </x-table-buttons>
+                            </td>   
+                        </tr>
+                    @endforeach
                 </table>
             </div>
         </div>

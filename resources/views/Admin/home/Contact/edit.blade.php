@@ -5,7 +5,7 @@
     <x-headbar>
         <div class="container overflow-hidden">
             <h2>Add Content to Edit Your Contact Detials On Footer</h2>
-            <form action="{{ route('Contact.store') }}" method="POST" class="form-group">
+            <form action="{{ route('Contact.update') }}" method="POST" class="form-group">
                 @csrf
                 <div class="row gy-5">
                     <x-form-column>  
