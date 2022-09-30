@@ -30,7 +30,15 @@ class AdminForm extends FormRequest
             'FPS_Img3' => 'bail|required',
             'FPS_Img4' => 'bail|required',
             'FPS_Img5' => 'bail|required',
-            'FPS_Img6' => 'bail|required'
+            'FPS_Img6' => 'bail|required',
+
+            // Contact Details
+            'FCC_em' => 'bail|required',
+            'FCC_su' => 'bail|required',
+            'FCC_of' => 'bail|required',
+            'FCC_ad' => 'bail|required',
+            'FCC_ph' => 'bail|required',
+            'FCC_nu' => 'bail|required',
         ];
     }
 }
