@@ -33,16 +33,19 @@
                 </table>
                 
                 <table class="table table-striped">
-                    <h3>Brand Partners</h3>
+                    <x-table-head>
+                        <h3>Brand Partners</h3>
+                        <a href="{{ route('Brand.create')}} " class="text-decoration-none pt-2 mb-4 text-info mx-5 border-bottom border-info">Add Features</a>
+                   </x-table-head>
                     @include('Admin.partials.table')
                     @foreach ($Brand as $item)
                         <tr>
                             <td>{{ $item->id}}</td>
-                            <td>{{ $item->FPS_Img1}}</td>
+                            <td class="text-truncate" style="max-width: 150px;">{{ $item->FPS_Img1}}</td>
                             <td>{{ $item->created_at}}</td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="{{ route('Brand.edit', $item->id) }}" class="btn btn-sm btn-outline-info px-3 rounded fs-6 mx-2 text-black"> Edit Row</a>
+                                    <a href="{{ route('Brand.edit', $item->id) }}" class="btn btn-sm btn-outline-info px-3 rounded mx-2 text-black"> Edit Row</a>
                                     <form action="{{ route('Brand.delete', $item->id) }}" method="POST">
                                         @csrf 
                                         @method('DELETE')

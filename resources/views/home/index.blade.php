@@ -772,25 +772,22 @@
         <div class="container">
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" data-autoplay="true" data-autoplay-timeout="8000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
                 <div class="partner-item">
-                    <a href="#"><img src="images/partner/bedrockgroup.jpg" alt="Partner Image"></a>
+                    <a href="#"><img src="{{ $home->FPS_Img1 }}" alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="images/partner/oziconnect.jpg" alt="Partner Image"></a>
+                    <a href="#"><img src="{{ $home->FPS_Img2 }}" alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="images/partner/valuebridge.jpg" alt="Partner Image"></a>
+                    <a href="#"><img src="{{ $home->FPS_Img3 }}" alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="images/partner/mic-phitgloballtd.jpg" alt="Partner Image"></a>
+                    <a href="#"><img src="{{ $home->FPS_Img4 }}" alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="images/partner/all4kids.jpg" alt="Partner Image"></a>
+                    <a href="#"><img src="{{ $home->FPS_Img5 }}" alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="images/partner/trackheroes.jpg" alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img src="images/partner/roskastevens.jpg" alt="Partner Image"></a>
+                    <a href="#"><img src="{{ $home->FPS_Img6 }}" alt="Partner Image"></a>
                 </div>
             </div>
             <!-- //.rs-carousel -->

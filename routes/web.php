@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 use function Ramsey\Uuid\v1;
@@ -16,10 +17,10 @@ use function Ramsey\Uuid\v1;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-})->name('home.index');
+Route::get('/', [HomeController::class, 'index'])
+    ->name('home.index');
 
+    
 Route::get('Admin/', [AdminController::class, 'index'])
     ->name('Admin.index');
 

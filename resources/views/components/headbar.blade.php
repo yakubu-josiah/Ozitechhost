@@ -8,7 +8,7 @@
         </nav>
     </div>
     <div>
-        <a href="/" class="px-3 btn btn-sm w-25 btn-outline-info">← Back</a>
+        <a href="{{ route('Admin.index') }}" class="px-3 btn btn-sm w-25 btn-outline-info">← Back</a>
     </div>
     <div class="mt-5">
         {{$slot}}
