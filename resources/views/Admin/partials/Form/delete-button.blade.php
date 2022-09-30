@@ -1,0 +1,1 @@
+<input type="submit" value="Delete Row" class="btn btn-sm btn-outline-info px-3 rounded fs-6 text-black">

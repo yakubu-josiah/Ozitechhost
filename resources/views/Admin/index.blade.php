@@ -35,7 +35,7 @@
                 <table class="table table-striped">
                     <x-table-head>
                         <h3>Brand Partners</h3>
-                        <a href="{{ route('Brand.create')}} " class="text-decoration-none pt-2 mb-4 text-info mx-5 border-bottom border-info">Add Features</a>
+                        <a href="{{ route('Brand.create')}} " class="text-decoration-none mt-2 mb-4 text-success mx-5 border-bottom border-top border-danger link-dark">Add Features</a>
                    </x-table-head>
                     @include('Admin.partials.table')
                     @foreach ($Brand as $item)
@@ -44,15 +44,14 @@
                             <td class="text-truncate" style="max-width: 150px;">{{ $item->FPS_Img1}}</td>
                             <td>{{ $item->created_at}}</td>
                             <td>
-                                <div class="d-flex justify-content-center">
+                                <x-table-buttons>
                                     <a href="{{ route('Brand.edit', $item->id) }}" class="btn btn-sm btn-outline-info px-3 rounded mx-2 text-black"> Edit Row</a>
                                     <form action="{{ route('Brand.delete', $item->id) }}" method="POST">
                                         @csrf 
                                         @method('DELETE')
-                                        <input type="submit" value="Delete Row" class="btn btn-sm btn-outline-info px-3 rounded fs-6">
+                                        @include('Admin.partials.Form.delete-button')
                                     </form> 
-                                </div>
-
+                                </x-table-buttons>
                             </td>   
                         </tr>
                     @endforeach
