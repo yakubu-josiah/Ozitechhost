@@ -6,6 +6,7 @@ use App\Http\Requests\AdminForm;
 use App\Models\BrandPartners;
 use App\Models\ContactDetails;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\AssignOp\Concat;
 
 class AdminController extends Controller
 {
@@ -46,9 +47,9 @@ class AdminController extends Controller
     public function BrandUpdate(AdminForm $request, $id)
     {
         $validated = $request->validated();
-        $Brand = BrandPartners::findOrFail($id);
-        $Brand->fill($validated);
-        $Brand->save();
+        $Brands = BrandPartners::findOrFail($id);
+        $Brands->fill($validated);
+        $Brands->save();
         
         session()->flash('status', 'Successfully Updated Brand Partners!!!');
         return redirect()->route('Admin.index');        
@@ -69,5 +70,38 @@ class AdminController extends Controller
     public function ContactCreate()
     {
         return view('Admin.home.Contact.create');
+    }
+    
+    public function ContactStore(Request $request)
+    {
+        $Contacts = ContactDetails::create($request->all());
+
+        session()->flash('status', 'Successfully created Contact Details!!!');
+        return redirect()->route('Admin.index');
+    }
+
+    public function ContactEdit($id)
+    {
+        return view('Admin.home.Contact.edit', ['Contacts' => ContactDetails::findOrFail($id)]);
+    }
+
+
+    public function ContactUpdate(Request $request, $id)
+    {
+        $Contacts = ContactDetails::findOrFail($id);
+        $Contacts->fill($request->all());
+        $Contacts->save();
+
+        session()->flash('status', 'Successfully Updated Contact Details!!!');
+        return redirect()->route('Admin.index');
+    }
+
+    public function ContactDelete($id)
+    {
+        $Contacts = ContactDetails::findOrFail($id);
+        $Contacts->delete();
+
+        session()->flash('status', 'Deleted successfully!!!');
+        return redirect()->route('Admin.index');
     }
 }

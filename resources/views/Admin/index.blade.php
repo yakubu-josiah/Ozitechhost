@@ -69,8 +69,8 @@
                             <td>{{ $item->created_at}}</td>
                             <td>
                                 <x-table-buttons>
-                                    <a href="{{ route('Brand.edit', $item->id) }}" class="btn btn-sm btn-outline-info px-3 rounded mx-2 text-black"> Edit Row</a>
-                                    <form action="{{ route('Brand.delete', $item->id) }}" method="POST">
+                                    <a href="{{ route('Contact.edit', $item->id) }}" class="btn btn-sm btn-outline-info px-3 rounded mx-2 text-black"> Edit Row</a>
+                                    <form action="{{ route('Contact.delete', $item->id) }}" method="POST">
                                         @csrf 
                                         @method('DELETE')
                                         @include('Admin.partials.Form.delete-button')

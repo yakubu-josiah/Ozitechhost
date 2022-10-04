@@ -24,7 +24,7 @@ Route::get('/', [HomeController::class, 'index'])
 Route::get('Admin/', [AdminController::class, 'index'])
     ->name('Admin.index');
 
-    // BRAND PARTNERS SECTION
+    //   CRUD ACTION FOR THE BRAND PARTNERS SECTION
 
 Route::get('Admin/home/edit-brand/create', [AdminController::class, 'BrandCreate'])
     ->name('Brand.create');
@@ -32,13 +32,22 @@ Route::post('Admin/home/edit-brand/stored', [AdminController::class, 'BrandStore
     ->name('Brand.store');
 Route::get('Admin/home/edit-brand/edit/{id}', [AdminController::class, 'BrandEdit'])
     ->name('Brand.edit');
-Route::put('Admin/home/edit-brand/edit/{id}/update/', [AdminController::class, 'BrandUpdate'])
+Route::put('Admin/home/edit-brand/edit/{id}/update', [AdminController::class, 'BrandUpdate'])
     ->name('Brand.update');
 Route::delete('Admin/home/edit-brand/delete/{id}', [AdminController::class, 'BrandDelete'])
     ->name('Brand.delete');
 
-    //  CONTACT DETAILS SECTION
+    //  CRUD ACTION FOR THE CONTACT DETAILS SECTION
 
 Route::get('Admin/home/edit-contact/create', [AdminController::class, 'ContactCreate'])
     ->name('Contact.create');
+Route::post('Admin/home/edit-contact/store', [AdminController::class, 'ContactStore'])
+    ->name('Contact.store');
+Route::get('Admin/home/edit-contact/edit/{id}', [AdminController::class, 'ContactEdit'])
+    ->name('Contact.edit');
+Route::put('Admin/home/edit-contact/edit/{id}/update', [AdminController::class, 'ContactUpdate'])
+    ->name('Contact.update');
+Route::delete('Admin/home/edit-contact/delete/{id}', [AdminController::class, 'ContactDelete'])
+    ->name('Contact.delete');
+
 
